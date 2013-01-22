@@ -7,7 +7,6 @@
  {
    "repository": "android_device_samsung_tuna",
    "target_path": "device/samsung/tuna",
-   "branch": "cm-10.1"
+   "branch": "jb2"
  }
 ]
-
