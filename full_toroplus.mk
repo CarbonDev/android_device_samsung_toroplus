@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2012 The LiquidSmooth Project
+# Copyright (C) 2012 The Carbon Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,15 @@ PRODUCT_PACKAGES := \
     GNexusParts
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from toroplus device
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+# This is where we'd set a backup provider if we had one
+#$(call inherit-product, device/sample/products/backup_overlay.mk)
+# Inherit from maguro device
 $(call inherit-product, device/samsung/toroplus/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := liquid_toroplus
+PRODUCT_NAME := carbon_toroplus
 PRODUCT_DEVICE := toroplus
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full AOSP on Toroplus
+PRODUCT_MODEL := AOSP on Toroplus
 PRODUCT_RESTRICT_VENDOR_FILES := false

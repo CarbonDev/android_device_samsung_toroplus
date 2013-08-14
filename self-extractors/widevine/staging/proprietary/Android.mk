@@ -1,6 +1,4 @@
-#
-# Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2012 The LiquidSmooth Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,8 +11,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_toroplus.mk \
-    $(LOCAL_DIR)/full_toroplus.mk
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),toroplus)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libdrmdecrypt
+LOCAL_SRC_FILES := libdrmdecrypt.so
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := widevine
+include $(BUILD_PREBUILT)
+
+endif

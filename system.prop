@@ -22,11 +22,3 @@ ro.ril.ecclist=112,911,#911,*911
 # Operator Values
 ro.cdma.home.operator.alpha=Sprint
 ro.cdma.home.operator.numeric=310120
-
-# Fields For VM Heapsize
-dalvik.vm.heapsize=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=2m
-dalvik.vm.heapstartsize=16m
-dalvik.vm.heapgrowthlimit=128m
-dalvik.vm.heaputilization=0.75
