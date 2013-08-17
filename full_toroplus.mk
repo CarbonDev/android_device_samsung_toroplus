@@ -16,7 +16,7 @@
 #
 
 PRODUCT_PACKAGES := \
-    GNexusParts
+    Gallery2
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
