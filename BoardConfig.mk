@@ -33,3 +33,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/toroplus
 
 # on toroplus boards we need to apply a special adaptive filter
 BOARD_INVENSENSE_APPLY_COMPASS_NOISE_FILTER := true
+
+# libsec-ril_lte.so is broke due to a missing symbol in surfacecomposerclient
+TARGET_TOROPLUS_RADIO := true

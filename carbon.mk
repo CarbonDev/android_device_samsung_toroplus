@@ -26,9 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.toroplus.$(shell date +%m%d%y
 
 # overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_NUMBER=L700FH05 \
+    BUILD_NUMBER=737497 \
     PRODUCT_NAME=mysidspr \
     TARGET_BUILD_TYPE=user \
     BUILD_VERSION_TAGS=release-keys \
-    PRIVATE_BUILD_DESC="mysidspr-user 4.1.1 JRO03U L700FH05 release-keys" \
-    BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.1.1/JRO03U/L700FH05:user/release-keys"
+    PRIVATE_BUILD_DESC="mysidspr-user 4.3 JWR66V 737497 release-keys"
+    BUILD_FINGERPRINT="google/mysidspr/toro:4.3/JWR66V/737497:user/release-keys"
