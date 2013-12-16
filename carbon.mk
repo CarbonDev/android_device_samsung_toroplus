@@ -21,11 +21,8 @@ PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.toroplus.$(shell date +%m%d%y).$(shell date +%H%M%S)
 
-# overrides
+#Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_NUMBER=737497 \
-    PRODUCT_NAME=mysidspr \
-    TARGET_BUILD_TYPE=user \
-    BUILD_VERSION_TAGS=release-keys \
-    PRIVATE_BUILD_DESC="mysidspr-user 4.3 JWR66V 737497 release-keys"
-    BUILD_FINGERPRINT="google/mysidspr/toro:4.3/JWR66V/737497:user/release-keys"
+     PRODUCT_NAME=mysidspr \
+     BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.3/JWR67B/L700GJ04:user/release-keys" \
+     PRIVATE_BUILD_DESC="mysidspr-user 4.3 JWR67B L700GJ04 release-keys"
